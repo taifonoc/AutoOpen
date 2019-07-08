@@ -12,12 +12,15 @@ namespace AutoOpen
 {
     public partial class Form1 : Form
     {
-                    Class1 class1 = new Class1();
+        
+ 
         public Form1()
         {
             InitializeComponent();
 
-            class1.CreateDictionary();
+            //class1.CreateDictionary();
+
+            
         }
 
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -100,7 +103,12 @@ apply
 
         private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            comboBox2.SelectedItem.ToString(); 
+            string te = comboBox2.SelectedItem.ToString()+"-"+textBox3.Text;
+            Console.WriteLine(te);
+            Class1 class1 = new Class1();
+            class1.CreateDictionary();
+            class1.read("T100-011");
+            
         }
     }
 }

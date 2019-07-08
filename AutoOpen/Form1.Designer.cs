@@ -76,7 +76,7 @@
             // 
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "T100 (中正區)",
+            "T100",
             "T103 (大同區)",
             "T104 (中山區)",
             "T105 (松山區)",
