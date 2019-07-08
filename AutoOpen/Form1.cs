@@ -12,16 +12,18 @@ namespace AutoOpen
 {
     public partial class Form1 : Form
     {
+                    Class1 class1 = new Class1();
         public Form1()
         {
             InitializeComponent();
 
-
+            class1.CreateDictionary();
         }
 
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string ww = comboBox1.SelectedItem.ToString();
+
             switch (ww)
             {
                 case "圖書館":
@@ -98,7 +100,7 @@ apply
 
         private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            comboBox2.SelectedItem.ToString(); 
         }
     }
 }
